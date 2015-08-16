@@ -19,8 +19,12 @@
         <p>笨笨的程序员</p>
 
 
-        <p class="view"><a href="https://github.com/hellorld">View My GitHub Profile</a></p>
-
+        <p>最新文章</p>
+        　　<ul>
+            　　　　{% for post in site.posts %}
+            　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            　　　　{% endfor %}
+            　　</ul>
       </header>
       <section>
         <h1>
