@@ -1,5 +1,4 @@
 markdown: rdiscount
-permalink: /:title/
 url: http://hellorld.github.io
 highlighter: pygments
 name: 笨笨的程序员
