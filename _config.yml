@@ -1,2 +1,10 @@
 markdown: rdiscount
-pygments: true
+permalink: /:title/
+highlighter: pygments
+name: 笨笨的程序员
+description: 笨笨的程序员 | stay hungry, stay foolish.
+author: SlowCoder
+email: qifengcheng@outlook.com
+safe: true
+paginate: 100
+about: "大菜鸟"
