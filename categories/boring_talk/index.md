@@ -1,5 +1,5 @@
 ---
-title: 当然我在扯淡
+title: 峰人疯语
 layout: page
 ---
 
