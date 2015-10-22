@@ -5,20 +5,14 @@ layout: page
 
 <ul class="listing2">
 {% for cat in site.categories %}
-        <li class="listing-seperator" id="9">9</li>
-        <li class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</li>
-        {% assign cur_cat = cat[0] %}
-        <li class="listing-seperator" id="{{ cur_cat }}">{{ cur_cat }}</li>
-        {% if cur_cat == page.title %}
-        <li class="listing-seperator" id="{{ page.title }}">{{ page.title }}</li>
-        <li class="listing-seperator" id="1">1</li>
-        {% endif %}
+    {% if cat[0] == page.title %}
         {% for post in cat[1] %}
             <li class="listing-item">
             <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
+    {% endif %}
 {% endfor %}
 </ul>
 
