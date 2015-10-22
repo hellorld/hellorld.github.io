@@ -7,7 +7,7 @@ layout: page
 {% for cat in site.categories %}
         <li class="listing-seperator" id="3">3</li>
         <li class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</li>
-        {% if page.title == '读书笔记' %}
+        {% if {{ cat[0] }} == '读书笔记' %}
         <li class="listing-seperator" id="{{ page.title }}">{{ page.title }}</li>
         <li class="listing-seperator" id="1">1</li>
         {% endif %}
