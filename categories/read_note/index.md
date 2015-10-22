@@ -6,7 +6,10 @@ layout: page
 <ul class="listing2">
 {% for cat in site.categories %}
         <li class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</li>
+        {% if page.title == "{{ cat[0] }}" %}
         <li class="listing-seperator" id="{{ page.title }}">{{ page.title }}</li>
+        <li class="listing-seperator" id="1111">1111</li>
+        {% endif %}
         {% for post in cat[1] %}
             <li class="listing-item">
             <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
