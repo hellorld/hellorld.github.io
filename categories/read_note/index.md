@@ -5,7 +5,7 @@ layout: page
 
 <ul class="listing2">
 {% for cat in site.categories %}
-    {% if page.title == "{{ cat[0] }}" %}
+    {% if page.title == {{ cat[0] }} %}
         <li class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</li>
         {% for post in cat[1] %}
             <li class="listing-item">
