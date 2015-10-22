@@ -9,6 +9,6 @@ weibo: 1718106751
 duoshuo: hellorld
 hub: hellorld
 safe: true
-paginate: 50
+paginate: 30
 permalink: /:year/:month/:day/:title
 about: "大菜鸟"
