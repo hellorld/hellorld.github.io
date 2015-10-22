@@ -23,11 +23,11 @@
                 {% for cat in site.categories %}
                     {% if cat[0] == '读书笔记' %}
                         <span><a title="{{ cat[0] }}" class="" href="/categories/read_note/">
-                        {{ cat[0] }}({{ cat[1].size }})
+                        {{ cat[0] }}{% if cat[1].size > 99 %}(99+){% else %}({{cat[1].size %}}){% endif %}
                         </a></span>
                     {% elsif cat[0] == '当然我在扯淡' %}
                         <span><a title="{{ cat[0] }}" class="" href="/categories/boring_talk/">
-                        {{ cat[0] }}({{ cat[1].size }})
+                        {{ cat[0] }}{% if cat[1].size > 99 %}(99+){% else %}({{cat[1].size %}}){% endif %}
                         </a></span>
                     {% endif %}
                 {% endfor %}
