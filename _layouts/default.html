@@ -19,15 +19,18 @@
 				<nav>
 				<span><a title="网站首页" class="" href="/">首页</a></span>
 				<span><a title="文章分类" class="" href="/categories/">分类</a></span>
-                <span><a title="读书笔记" class="" href="/categories/read_note/">读书笔记</a></span>
-
-                <div id='tag_cloud'>
+                
                 {% for cat in site.categories %}
-                <span>
-                <a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a>
-                </span>
+                    {% if cat[0] == '读书笔记' %}
+                        <span><a title="{{ cat[0} }}" class="" href="/categories/read_note/">
+                        {{ cat[0] }}({{ cat[1].size }})
+                        </a></span>
+                    {% elsif cat[0] == '当然我在扯淡' %}
+                        <span><a title="{{ cat[0] }}" class="" href="/categories/boring_talk/">
+                        {{ cat[0] }}({{ cat[1].size }})
+                        </a></span>
+                    {% endif %}
                 {% endfor %}
-                </div>
 
 				<span><a title="标签索引" class="" href="/tags/">标签</a></span>
 				<!--<span><a title="友情链接" class="" href="/links/">链接</a></span>-->

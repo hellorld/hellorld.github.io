@@ -1,5 +1,5 @@
 ---
-title: 读书笔记
+title: 当然我在扯淡
 layout: page
 ---
 
