@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 杨绛：什么是好的教育，什么是好的婚姻
-categories: 峰人疯语
+categories: 风人疯语
 tags: 杨绛
 ---
 
