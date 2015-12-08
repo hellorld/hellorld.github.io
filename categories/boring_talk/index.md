@@ -1,5 +1,5 @@
 ---
-title: 峰人疯语
+title: 风人疯语
 layout: page
 ---
 
