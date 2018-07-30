@@ -1,7 +1,7 @@
 ---
 layout: post
 title: github博客搭建总结
-categories: 风人疯语
+categories: 编程技术
 tags: github博客
 ---
 

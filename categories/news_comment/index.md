@@ -1,5 +1,5 @@
 ---
-title: 随笔杂记
+title: 时事评论
 layout: page
 ---
 

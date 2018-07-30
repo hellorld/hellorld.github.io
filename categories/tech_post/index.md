@@ -1,5 +1,5 @@
 ---
-title: 随笔杂记
+title: 编程技术
 layout: page
 ---
 

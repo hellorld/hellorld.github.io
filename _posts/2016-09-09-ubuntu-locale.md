@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ubuntu locale问题初探(一) 
-categories: Linux系统配置 
+categories: 编程技术
 tags: ubuntu 
 ---
 

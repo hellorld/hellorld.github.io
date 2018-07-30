@@ -21,11 +21,19 @@
 				                
 
                 {% for cat in site.categories %}
-                    {% if cat[0] == '读书笔记' %}
+                    {% if cat[0] == '编程技术' %}
+                        <span><a title="{{ cat[0] }}" class="" href="/categories/tech_post/">
+                        {{ cat[0] }}{% if cat[1].size > 99 %}(99+){% else %}({{cat[1].size %}}){% endif %}
+                        </a></span>
+                    {% elsif cat[0] == '读书笔记' %}
                         <span><a title="{{ cat[0] }}" class="" href="/categories/read_note/">
                         {{ cat[0] }}{% if cat[1].size > 99 %}(99+){% else %}({{cat[1].size %}}){% endif %}
                         </a></span>
-                    {% elsif cat[0] == '风人疯语' %}
+                    {% elsif cat[0] == '时事评论' %}
+                        <span><a title="{{ cat[0] }}" class="" href="/categories/news_comment/">
+                        {{ cat[0] }}{% if cat[1].size > 99 %}(99+){% else %}({{cat[1].size %}}){% endif %}
+                        </a></span>
+                    {% elsif cat[0] == '随笔杂记' %}
                         <span><a title="{{ cat[0] }}" class="" href="/categories/boring_talk/">
                         {{ cat[0] }}{% if cat[1].size > 99 %}(99+){% else %}({{cat[1].size %}}){% endif %}
                         </a></span>
@@ -34,11 +42,11 @@
                 
        
                 <!--<span><a title="文章分类" class="" href="/categories/">全部分类</a></span>-->
-				<span><a title="标签索引" class="" href="/tags/">标签</a></span>
+				<span><a title="标签索引" class="" href="/tags/">标签分类</a></span>
 				<!--<span><a title="友情链接" class="" href="/links/">链接</a></span>-->
-				<span><a title="留言交流" class="" href="/guestbook/">留言</a></span>
+        <!--<span><a title="留言交流" class="" href="/guestbook/">留言</a></span>-->
                 <!--<span><a title="订阅本站" class="" href="/feed.xml">订阅</a></span>-->
-				<span><a title="关于站长" class="" href="/about/">关于</a></span>
+				<span><a title="关于站长" class="" href="/about/">关于博主</a></span>
 				</nav>
 				<article class="content">
 				{{ content }}
